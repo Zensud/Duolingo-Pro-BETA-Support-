@@ -13,7 +13,7 @@
     'use strict';
 
     const autobutton = "/html/body/div[5]/div[1]/div[2]/div[3]/div/label";
-    const listeningPage = "www.duolingo.com"; //Listening url
+    const listeningPage = "https://duolingo.com/practice-hub"; //Listening url
     const practiceHub = "https://duolingo.com/practice-hub/listening-practice"; // Practice hub URL
     const buttonXPath = "/html/body/div[1]/div[1]/div/div/div[2]/div/div/div/button[1]";
     let buttonClicked = false;
