@@ -13,11 +13,10 @@
     'use strict';
 
     const autobutton = "/html/body/div[5]/div[1]/div[2]/div[3]/div/label";
-    const listeningPage = "https://duolingo.com/practice-hub"; //Listening url
-    const practiceHub = "https://duolingo.com/practice-hub/listening-practice"; // Practice hub URL
+    const listeningPage = "https://www.duolingo.com/practice-hub/listening-practice"; //Listening url
+    const practiceHub = "https://www.duolingo.com/practice-hub"; // Practice hub URL
     const buttonXPath = "/html/body/div[1]/div[1]/div/div/div[2]/div/div/div/button[1]";
     let buttonClicked = false;
-    let timer;
 
     //timer function
     function clickButton() {
@@ -29,27 +28,6 @@
             console.log("Button not found!");
         }
     }
-
-    function startTimer() {
-        timer = setTimeout(clickButton, 60000); // Wait for 60 seconds (60000 milliseconds)
-    }
-
-    function resetTimer() {
-        clearTimeout(timer);
-    }
-
-    function handlePageChange() {
-        if (window.location.href === practiceHub) {
-            resetTimer();
-            console.log("Timer reset!");
-        } else if (window.location.href === listeningPage) {
-            startTimer();
-            console.log("Timer started!");
-        }
-    }
-
-    setInterval(handlePageChange, 3000); 
-    handlePageChange();
 
     function navigateTolisteningPage() {
         window.location.href = listeningPage;
@@ -77,9 +55,8 @@
         } else if (window.location.href === listeningPage) {
             clickButtonOnce();
         }
-    }, 5000); 
+    }, 5000);
 })();
-
 
 
 
