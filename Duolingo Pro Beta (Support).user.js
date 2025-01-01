@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Duolingo Pro (Extension)
 // @namespace    http://tampermonkey.net/
-// @version      2024-04-09
+// @version      2025-01-01
 // @description  Fix the Listening only mode from the original extension.
 // @author       Zensud
 // @match        https://www.duolingo.com/*
